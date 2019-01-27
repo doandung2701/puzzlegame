@@ -79,11 +79,11 @@ export default class Game extends React.Component {
     onQuit();
   };
   requestTransitionOut = () => {
-    const { onQuit } = this.props;
+   // const { onQuit } = this.props;
     clearInterval(this.intervalId);
 
     this.setState({ transitionState: State.RequestTransitionOut });
-    onQuit();
+  //  onQuit();
   };
   handlePressQuit = () => {
     Alert.alert(
